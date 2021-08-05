@@ -1,0 +1,73 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing W3 Schools",
+    "line": 1,
+    "id": "testing-w3-schools",
+    "tags": [],
+    "uri": "features\\demo.feature",
+    "elements": [
+      {
+        "id": "testing-w3-schools;launch-w3-schools",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Launch W3 schools",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I launch w3 schools website",
+            "match": {
+              "location": "step-definitions\\demo.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3690000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click learnHTML link",
+            "match": {
+              "location": "step-definitions\\demo.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should land on html learning page",
+            "match": {
+              "location": "step-definitions\\demo.ts:18"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5021000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (D:\\protractor\\protractor-cucumber-framework\\node_modules\\cucumber\\lib\\user_code_runner.js:81:20)\n    at listOnTimeout (internal/timers.js:531:17)\n    at processTimers (internal/timers.js:475:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
